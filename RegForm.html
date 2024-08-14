@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+  <link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Registraion<span>Form</h1>
+    <form class="form" onsubmit="return validateForm()">
+      <input type="text" placeholder="Username" name="username" required>
+      <input type="email" placeholder="Email" name="mail" required>
+      <input type="tel" placeholder="Telephone No." name="tel" required>
+      <input type="password" id="password" placeholder="Password" required>
+      <input type="password" id="confirm-password" placeholder="Confirm Password" name="password" required>
+
+      <div class="checkbox-container">
+        <input type="checkbox" id="terms" required>
+        <label for="terms">I Agree To The Terms & Conditions</label>
+      </div>
+
+      <button type="submit" class="register-btn">REGISTER</button>
+    </form>
+  </div>
+  <script>
+    function validateForm() {
+      const password = document.getElementById('password').value;
+      const confirmPassword = document.getElementById('confirm-password').value;
+      const termsChecked = document.getElementById('terms').checked;
+
+      if (password !== confirmPassword) {
+        alert('Password Incorrect!');
+        return false;
+      } else {
+        alert("Submission Successful.")
+      }
+
+      if (!termsChecked) {
+        alert('You must agree to the terms and conditions.');
+        return false;
+      }
+
+      return true;
+    }
+
+  </script>
+
+</body>
+
+</html>

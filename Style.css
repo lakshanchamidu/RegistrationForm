@@ -1,0 +1,80 @@
+
+ body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(bg1.jpeg); 
+    background-size: cover;
+    background-position: center;
+}
+h1{
+    color: #fff; 
+    text-align: center;
+}
+h1 span{
+    color: #e60073;
+}
+.container {
+    background-image: url(wp7278343.webp); 
+    padding: 20px;
+    border-radius: 10px;
+    width: 350px;
+}
+
+.form input[type="text"],
+.form input[type="email"],
+.form input[type="tel"],
+.form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+    color: white;
+    
+    outline: none;
+}
+.form input[type="checkbox"]{
+    
+    margin-left: 45px;
+    
+}
+
+.form .checkbox-container {
+    display: flex;
+    align-items: center;
+    font-size: 4%;
+    margin-top: 10px;
+}
+
+.form .checkbox-container input[type="checkbox"] {
+    margin-right: 12px;
+}
+
+.form .checkbox-container label {
+    color: white;
+    font-size: 12px;
+}
+
+.form .register-btn {
+    width: 100%;
+    padding: 10px;
+    background: #ff007f;
+    border: none;
+    border-radius: 55px;
+    font-weight: 700;
+    color: white;
+    font-size: 16px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.form .register-btn:hover {
+    background: #e60073;
+}
+
